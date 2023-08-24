@@ -1,91 +1,90 @@
 body {
-    position: relative;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color:#ffe600;
-    color: black;
-  }
+  position: relative;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffe600;
+  color: black;
+}
 
-  header {
-    position: relative;
-    background-color:#333333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-  }
-  header img {
-      position: absolute;
-      top: 15px;
-      right: 20px;
-      width: 120px;
-    }
+header {
+  position: relative;
+  background-color: #333333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+header img {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 120px;
+}
 
-  .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
-  .form-group {
-    margin-bottom: 20px;
-    margin-top: 20px; 
-  }
+.form-group {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: block;
+}
 
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
 
-  #meetingId {
-    display: block;
-    margin-top: 5px;
-    width: 15%;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
+#meetingId {
+  display: block;
+  margin-top: 5px;
+  width: 15%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-  input[type="file"] {
-    display: block;
-    margin-top: 5px;
-  }
+input[type="file"] {
+  display: block;
+  margin-top: 5px;
+}
 
-  button {
-    background-color: grey;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+button {
+  background-color: grey;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-  button:hover {
-    background-color:grey;
-  }
-  .welcome-message {
+button:hover {
+  background-color: grey;
+}
+.welcome-message {
   text-align: center;
   color: #333333;
-  font-family: "Arial", sans-serif; 
-  font-size: 24px; 
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
   margin-top: 20px;
 }
-  #uploadedVideo {
-      display: none;
-      margin-top: 20px;
-      max-width: 100%;
-      width:60%;
-      height:auto;
-      float: left;
-    }
-    
-  #generateMomButton {
-    display: none;
-    float: right;
-    margin-top: 20px;
-    }
+#uploadedVideo {
+  margin-top: 20px;
+  max-width: 100%;
+  width: 60%;
+  height: auto;
+}
 
+#result {
+  display: none;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+}

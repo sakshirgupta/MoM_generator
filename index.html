@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Uploader</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Uploader</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <img src="EY.png" alt="Ernst and Young Logo" width="100">
-        <h1>MoM Generator</h1>
-    
-      </header>
-      <div class="welcome-message">
+      <img src="EY.png" alt="Ernst and Young Logo" width="100" />
+      <h1>MoM Generator</h1>
+    </header>
+    <div class="welcome-message">
       <p>Welcome to the minutes of meeting generator</p>
+    </div>
+
+    <div class="container">
+      <form id="uploadForm">
+        <div class="form-group">
+          <label for="videoFile">Select a video:</label>
+          <input
+            type="file"
+            id="videoFile"
+            name="videoFile"
+            accept="video/*"
+            required
+          />
+        </div>
+        <div class="form-group group2">
+          <label for="meetingId">Enter Meeting ID:</label>
+          <input type="text" id="meetingId" name="meetingId" required />
+        </div>
+        <button type="submit">Upload Video</button>
+        <!--error-->
+      </form>
+
+      <div id="result">
+        <video id="uploadedVideo" controls>
+          Your browser does not support the video tag.
+        </video>
+        <button id="generateMomButton">Generate MoM</button>
       </div>
-    
-      <div class="container">
-        <form id="uploadForm">
-          <div class="form-group">
-            <label for="videoFile">Select a video:</label>
-            <input type="file" id="videoFile" name="videoFile" accept="video/*" required>
-            <video id="uploadedVideo" controls>
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="form-group">
-            <label for="meetingId">Enter Meeting ID:</label>
-            <input type="text" id="meetingId" name="meetingId" required>
-          </div>
-          <button type="submit">Upload Video</button>
-          <button id="generateMomButton" style="display: none;">Generate MoM</button> <!--error-->
-        </form>
-      </div>
-      
-  <script src="script.js"></script>
-</body>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
